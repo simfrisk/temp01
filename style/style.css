@@ -142,6 +142,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 8px;
 }
 
 .img-food-card {
