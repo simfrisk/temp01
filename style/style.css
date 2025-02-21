@@ -4,9 +4,9 @@
   --primary-hover: ;
   --primary-fixed: ;
 
-  --secondary-: ;
-  --secondary-hover: ;
-  --secondary-hover: ;
+  --secondary-: rgb(43, 83, 43);
+  --secondary-hover: rgb(53, 102, 53);
+  --secondary-hover-fixed: ;
 
   --complementary-: ;
   --complementary-hover: ;
@@ -26,7 +26,7 @@
 
   --font-secondary: white;
   --font-secondary-hover: ;
-  --font-secondary-fixed: ;
+  --font-secondary-fixed: white;
 
   --font-complementary-: ;
   --font-complementary-hover: ;
@@ -41,22 +41,22 @@
   --primary: ;
   --primary-hover: ;
 
-  --secondary-: ;
-  --secondary-hover: ;
+  --secondary-: blue;
+  --secondary-hover: rgb(30, 30, 245);
 
   --complementary-: ;
   --complementary-hover: ;
 
-  --aditional: ;
+  --aditional: rgb(35, 36, 44);
   --aditional-hover: ;
 
-  --body: ;
+  --body: rgb(23, 26, 32);
   --body-hover: ;
 
-  --font-primary: ;
+  --font-primary: white;
   --font-primary-hover: ;
 
-  --font-secondary: ;
+  --font-secondary: #222222;
   --font-secondary-hover: ;
 
   --font-complementary-: ;
@@ -70,7 +70,50 @@ body {
   color: var(--font-primary);
   background-color: var(--body);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
 }
+
+input {
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+
+}
+
+button {
+  font-size: 1rem;
+  border: none;
+  background-color: var(--secondary-);
+  color: var(--font-secondary-fixed);
+  padding: 7px 15px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-hover);
+  transform: scale(1.03);
+}
+
+.search-categ-btns {
+  display: flex;
+  gap: .5em;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.search-categ-btns button {
+  margin: 5px 0;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.search-categ-btns button:hover {
+  background-color: var(--secondary-hover);
+  transform: scale(1.03);
+}
+
 
 .food-article-container {
   display: flex;
