@@ -68,9 +68,9 @@ button:hover {
   color: rgb(133, 133, 133);
 }
 
-
 .search-categ-btns {
   display: flex;
+  height: 100%;
   gap: .5em;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -106,7 +106,7 @@ button:hover {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: clamp(9rem, 30vw, 30rem);
-  height: clamp(20rem, 30vw, 30rem);
+  height: clamp(20rem, 30vw, 40rem);
   /* aspect-ratio: 4 / 5; */
 }
 
