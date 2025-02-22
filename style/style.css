@@ -7,14 +7,15 @@ body {
   background-color: var(--body);
   font-family: Arial, Helvetica, sans-serif;
   margin: 15px;
+  font-size: clamp(1rem, 1.8vw, 5rem);
 }
 
 /* ----- basic tags --- Manual Fold -----  */
 input {
   border: none;
+  border-radius: 8px;
   padding: 5px 10px;
   font-size: 1rem;
-
 }
 
 button {
@@ -32,6 +33,41 @@ button:hover {
   background-color: var(--complementary-hover);
   transform: scale(1.03);
 }
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.nav-line {
+  height: 3px;
+  width: 25px;
+  background-color: var(--font-primary);
+  margin: 5px 5px 0 0
+}
+
+.nav-line:hover {
+  background-color: var(--font-primary-hover);
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search {
+  width: 100%;
+  max-width: 1000px;
+  margin-right: 10px;
+}
+
+.search::placeholder {
+  color: rgb(133, 133, 133);
+}
+
 
 .search-categ-btns {
   display: flex;
@@ -77,7 +113,7 @@ button:hover {
 .food-img-bg {
   background-color: var(--aditional);
   padding: 10px;
-  height: 150px;
+  height: clamp(10rem, 20vw, 30rem);
   display: flex;
   justify-content: center;
   align-items: center;
