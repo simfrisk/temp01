@@ -1,69 +1,5 @@
-/* ----- Color Pallet --- Manual Fold -----  */
-:root {
-  --primary: ;
-  --primary-hover: ;
-  --primary-fixed: ;
-
-  --secondary-: rgb(43, 83, 43);
-  --secondary-hover: rgb(53, 102, 53);
-  --secondary-hover-fixed: ;
-
-  --complementary-: ;
-  --complementary-hover: ;
-  --complementary-fixed: ;
-
-  --aditional: lightgray;
-  --aditional-hover: ;
-  --aditional-fixed: ;
-
-  --body: #EDEDED;
-  --body-hover: ;
-  --body-fixed: ;
-
-  --font-primary: #222222;
-  --font-primary-hover: ;
-  --font-primary-fixed: ;
-
-  --font-secondary: white;
-  --font-secondary-hover: ;
-  --font-secondary-fixed: white;
-
-  --font-complementary-: ;
-  --font-complementary-hover: ;
-  --font-complementary-fixed: ;
-
-  --font-aditional: ;
-  --font-aditional-hover: ;
-  --font-aditional-fixed: ;
-}
-
-.dark-mode {
-  --primary: ;
-  --primary-hover: ;
-
-  --secondary-: blue;
-  --secondary-hover: rgb(30, 30, 245);
-
-  --complementary-: ;
-  --complementary-hover: ;
-
-  --aditional: rgb(35, 36, 44);
-  --aditional-hover: ;
-
-  --body: rgb(23, 26, 32);
-  --body-hover: ;
-
-  --font-primary: white;
-  --font-primary-hover: ;
-
-  --font-secondary: #222222;
-  --font-secondary-hover: ;
-
-  --font-complementary-: ;
-  --font-complementary-hover: ;
-
-  --font-aditional: ;
-  --font-aditional-hover: ;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -73,6 +9,7 @@ body {
   margin: 15px;
 }
 
+/* ----- basic tags --- Manual Fold -----  */
 input {
   border: none;
   padding: 5px 10px;
@@ -83,7 +20,7 @@ input {
 button {
   font-size: 1rem;
   border: none;
-  background-color: var(--secondary-);
+  background-color: var(--complementary-);
   color: var(--font-secondary-fixed);
   padding: 7px 15px;
   margin: 5px 10px;
@@ -92,7 +29,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--secondary-hover);
+  background-color: var(--complementary-hover);
   transform: scale(1.03);
 }
 
@@ -101,12 +38,14 @@ button:hover {
   gap: .5em;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  margin-top: 15px;
 }
 
 .search-categ-btns button {
   margin: 5px 0;
   scroll-snap-align: start;
   flex-shrink: 0;
+  background-color: var(--secondary-);
 }
 
 .search-categ-btns button:hover {
