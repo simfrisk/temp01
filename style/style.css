@@ -21,7 +21,7 @@ input {
 button {
   font-size: 1rem;
   border: none;
-  background-color: var(--complementary-);
+  background-color: var(--complementary);
   color: var(--font-secondary-fixed);
   padding: 7px 15px;
   margin: 5px 10px;
@@ -38,7 +38,6 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .nav-line {
@@ -48,8 +47,9 @@ button:hover {
   margin: 5px 5px 0 0
 }
 
-.nav-line:hover {
+nav:hover .nav-line {
   background-color: var(--font-primary-hover);
+  transform: scale(1.03);
 }
 
 .search-container {

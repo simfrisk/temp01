@@ -6,7 +6,7 @@
 
   --secondary-: rgb(43, 83, 43);
   --secondary-hover: rgb(53, 102, 53);
-  --secondary-hover-fixed: ;
+  --secondary-fixed: rgb(43, 83, 43);
 
   --complementary-: pink;
   --complementary-hover: rgb(252, 204, 212);
@@ -21,7 +21,7 @@
   --body-fixed: ;
 
   --font-primary: #222222;
-  --font-primary-hover: ;
+  --font-primary-hover: #5a5a5a;
   --font-primary-fixed: ;
 
   --font-secondary: white;
@@ -54,7 +54,7 @@
   --body-hover: ;
 
   --font-primary: white;
-  --font-primary-hover: ;
+  --font-primary-hover: rgb(211, 211, 211);
 
   --font-secondary: #222222;
   --font-secondary-hover: ;
